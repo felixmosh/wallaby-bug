@@ -1,0 +1,19 @@
+{
+  "name": "wallaby-bug",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-mocks": "^1.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5",
+    "wallaby-webpack": "0.0.31",
+    "webpack": "^1.14.0"
+  }
+}
