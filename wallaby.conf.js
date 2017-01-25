@@ -2,7 +2,9 @@ const wallabyWebpack = require('wallaby-webpack');
 const webpack = require('webpack');
 const webpackPostprocessor = wallabyWebpack({
 	entryPatterns: [
-		'src/appWrapper.js'
+		'src/appWrapper.js',
+		'src/**/!(*.spec).notModule.js',
+    'src/**/*.spec.notModule.js'
 	],
 	module: {
 		plugins: [
@@ -28,7 +30,7 @@ module.exports = function () {
 		files: [
 			{pattern: 'node_modules/angular/angular.js', instrument: false},
 			{pattern: 'node_modules/angular-mocks/angular-mocks.js', instrument: false},
-			{pattern: 'src/**/*.ts'},
+			{pattern: 'src/**/*.ts', load: false},
 			{pattern: 'src/**/*.spec.notModule.ts', ignore: true}
 		],
 		tests: [
