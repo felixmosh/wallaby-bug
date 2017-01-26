@@ -2,6 +2,7 @@ const wallabyWebpack = require('wallaby-webpack');
 const webpack = require('webpack');
 const webpackPostprocessor = wallabyWebpack({
 	entryPatterns: [
+		'src/app.js',
 		'src/appWrapper.js',
 		'src/**/*.spec.notModule.js'
 	],
