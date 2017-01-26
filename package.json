@@ -14,7 +14,7 @@
   "devDependencies": {
     "ts-global-module-loader": "^1.0.0",
     "typescript": "^2.1.5",
-    "wallaby-webpack": "0.0.31",
+    "wallaby-webpack": "0.0.32",
     "webpack": "^1.14.0"
   }
 }
