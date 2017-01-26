@@ -2,6 +2,7 @@ const wallabyWebpack = require('wallaby-webpack');
 const webpack = require('webpack');
 const webpackPostprocessor = wallabyWebpack({
 	entryPatterns: [
+		'src/app.js',
 		'src/appWrapper.js',
 		'src/**/!(*.spec).notModule.js',
 		'src/**/*.spec.notModule.js'
@@ -34,7 +35,7 @@ module.exports = function () {
 			{pattern: 'src/**/*.spec.notModule.ts', ignore: true}
 		],
 		tests: [
-			{pattern: 'src/**/*.spec.notModule.ts'}
+			{pattern: 'src/**/*.spec.notModule.ts', load: false}
 		],
 		debug: true,
 		testFramework: 'jasmine',
