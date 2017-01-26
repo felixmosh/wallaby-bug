@@ -6,7 +6,7 @@ describe('wellcome', () => {
 	});
 
 	beforeEach(() => {
-		driver = new WellcomeDriver();
+		driver = new testDrivers.WellcomeDriver();
 		driver.when.created();
 	});
 

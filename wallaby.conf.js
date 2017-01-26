@@ -17,6 +17,9 @@ const webpackPostprocessor = wallabyWebpack({
 			}, {
 				test: /\.scss$/,
 				loader: 'null-loader'
+			}, {
+				test: /\.driver\.noModule/,
+				loader: 'ts-global-module-loader'
 			}
 		]
 	},

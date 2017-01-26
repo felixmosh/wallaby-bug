@@ -12,6 +12,7 @@
     "angular-mocks": "^1.6.1"
   },
   "devDependencies": {
+    "ts-global-module-loader": "^1.0.0",
     "typescript": "^2.1.5",
     "wallaby-webpack": "0.0.31",
     "webpack": "^1.14.0"
