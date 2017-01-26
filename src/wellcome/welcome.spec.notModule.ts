@@ -1,13 +1,16 @@
 describe('wellcome', () => {
+	let driver;
+
 	beforeEach(() => {
 		angular.mock.module('appWrapper');
 	});
 
-	it('should show sign', inject(($compile, $rootScope) => {
-		const $scope = $rootScope.$new();
-		const component = $compile('<wellcome></wellcome>')($scope);
-		$scope.$apply();
+	beforeEach(() => {
+		driver = new WellcomeDriver();
+		driver.when.created();
+	});
 
-		expect(component[0].querySelector('.sign').textContent).toBe('!')
-	}));
+	it('should show sign', () => {
+		expect(driver.get.signText()).toBe('!')
+	});
 });

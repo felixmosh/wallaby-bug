@@ -4,7 +4,7 @@ const webpackPostprocessor = wallabyWebpack({
 	entryPatterns: [
 		'src/appWrapper.js',
 		'src/**/!(*.spec).notModule.js',
-    'src/**/*.spec.notModule.js'
+		'src/**/*.spec.notModule.js'
 	],
 	module: {
 		plugins: [
